@@ -7,8 +7,8 @@ function helloWorld() {
 // }
 
 
-function sayHello() {
-    return "";
+function sayHello(input) {
+   return "Hello, " + input + "!";
 }
 
 
