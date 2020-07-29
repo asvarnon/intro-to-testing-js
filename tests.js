@@ -47,7 +47,25 @@ describe("isFive", function () {
         expect(isFive(".1")).toBe(false);
         expect(isFive(-5)).toBe(false);
     });
-})
+});
 
-
+describe("isEven", function () {
+    it('should determine if even.', function () {
+        expect(typeof isEven).toBe("function");
+    });
+    it('should return boolean answer.', function () {
+        expect(typeof isEven()).toBe("boolean");
+    });
+    it('should return true if 2 is entered.', function () {
+        expect(isEven(2)).toBe(true);
+        expect(isEven("2")).toBe(true);
+        expect(isEven(-4)).toBe(false);
+        expect(isEven(3)).toBe(false);
+        expect(isEven("banana")).toBe(false);
+        expect(isEven("8")).toBe(false);
+        expect(isEven(infinity)).toBe(false);
+        expect(isEven(true)).toBe(false);
+        expect(isEven(false)).toBe(false);
+    });
+});
 
