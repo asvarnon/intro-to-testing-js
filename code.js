@@ -1,4 +1,9 @@
-// helloWorld function 
+"use strict";
+//(function (){
+
+
+
+// helloWorld function
 function helloWorld() {
     return "Hello, World!";
 }
@@ -15,15 +20,37 @@ function isFive(input) {
     return input == 5;
 }
 
-// function isEven(input) {
-//     if (input % 2 == 0) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
+function isEven(input) {
+    if (input % 2 == 0){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isVowel(input) {
+    if (input === "a" || input === "A") {
+        return true;
+    } else if (input === "e"|| input === "E") {
+        return true;
+    } else if (input === "i"|| input === "I") {
+        return true;
+    } else if (input === "o"|| input === "O") {
+        return true;
+    } else if (input === "u"|| input === "U") {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 
 
 
 
+
+
+
+
+
+//})();

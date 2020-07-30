@@ -59,13 +59,64 @@ describe("isEven", function () {
     it('should return true if 2 is entered.', function () {
         expect(isEven(2)).toBe(true);
         expect(isEven("2")).toBe(true);
-        expect(isEven(-4)).toBe(false);
+        expect(isEven(-4)).toBe(true);
         expect(isEven(3)).toBe(false);
         expect(isEven("banana")).toBe(false);
-        expect(isEven("8")).toBe(false);
-        expect(isEven(infinity)).toBe(false);
-        expect(isEven(true)).toBe(false);
-        expect(isEven(false)).toBe(false);
+        expect(isEven("8")).toBe(true);
     });
 });
+
+describe("isVowel", function () {
+    it('should be defined as a function', function () {
+        expect(typeof isVowel).toBe("function");
+    });
+    it('should return a boolean', function () {
+        expect(typeof isVowel()).toBe("boolean");
+    });
+    it('should return true if "a" is entered', function () {
+        expect(isVowel("a")).toBe(true);
+    });
+    it('should return true if "e" is entered', function () {
+        expect(isVowel("e")).toBe(true);
+    });
+    it('should return true if "i" is entered', function () {
+        expect(isVowel("i")).toBe(true);
+    });
+    it('should return true if "o" is entered', function () {
+        expect(isVowel("o")).toBe(true);
+    });
+    it('should return true if "u" is entered', function () {
+        expect(isVowel("u")).toBe(true);
+    });
+    it('should return false if "y" is entered', function () {
+        expect(isVowel("y")).toBe(false);
+    });
+    it('should return false if "true" is entered', function () {
+        expect(isVowel("true")).toBe(false);
+    });
+    it('should return false if "false" is entered', function () {
+        expect(isVowel("false")).toBe(false);
+    });
+    it('should return false if "banana" is entered', function () {
+        expect(isVowel("banana")).toBe(false);
+    });
+    it('should return false if nothing is entered', function () {
+        expect(isVowel()).toBe(false);
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
