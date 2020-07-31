@@ -1,6 +1,6 @@
-"use strict";
-//(function (){
 
+//(function (){
+"use strict";
 
 
 // helloWorld function
@@ -44,7 +44,12 @@ function isVowel(input) {
     }
 }
 
-
+function add(a, b) {
+    if (typeof parseInt(a) !== "number" || typeof parseInt(a) !== "number") {
+        return NaN;
+    }
+    return parseInt(a) + parseInt(b);
+}
 
 
 
