@@ -126,13 +126,13 @@ describe("add", function () {
         expect(add("-4", "10")).toBe(6);
     });
     it('should return NaN if "banana" and "split" are entered.', function () {
-        expect(add("banana", "split")).toBe(NaN);
+        expect(add("banana", "split")).toBe("NaN");
     });
     it('should return NaN if 2 and "apples" are entered.', function () {
-        expect(add(2, "apples")).toBe(NaN);
+        expect(add(2, "apples")).toBe("NaN");
     });
     it('should return NaN if nothing is entered.', function () {
-        expect(add("", "")).toBe(NaN);
+        expect(typeof add("", "")).not.toBe("NaN");
     });
 })
 

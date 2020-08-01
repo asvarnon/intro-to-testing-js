@@ -45,7 +45,9 @@ function isVowel(input) {
 }
 
 function add(a, b) {
-    if (typeof parseInt(a) !== "number" || typeof parseInt(a) !== "number") {
+    console.log("This is a:", parseInt(a));
+    console.log("This is b:",parseInt(b));
+    if (isNaN(a) || isNaN(b)) {
         return NaN;
     }
     return parseInt(a) + parseInt(b);
