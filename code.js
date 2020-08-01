@@ -1,5 +1,5 @@
 
-//(function (){
+(function (){
 "use strict";
 
 
@@ -47,7 +47,7 @@ function isVowel(input) {
 function add(a, b) {
     console.log("This is a:", parseInt(a));
     console.log("This is b:",parseInt(b));
-    if (isNaN(a) || isNaN(b)) {
+    if (isNaN(a) === true || isNaN(b) === true) {
         return NaN;
     }
     return parseInt(a) + parseInt(b);
@@ -60,4 +60,4 @@ function add(a, b) {
 
 
 
-//})();
+})();
