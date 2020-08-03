@@ -1,5 +1,5 @@
 
-//(function (){
+(function (){
 "use strict";
 
 
@@ -55,5 +55,4 @@ function add(a, b) {
 }
 
 
-
-//})();
+})();
